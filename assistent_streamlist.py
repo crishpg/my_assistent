@@ -79,7 +79,8 @@ st.title("Assistente GPT")
 st.write("Faça uma pergunta e eu responderei!")
 
 with st.form("form_pergunta", clear_on_submit=False):
-    st.text_input("Pergunta:", key="pergunta")
+    #st.text_input("Pergunta:", key="pergunta", height=150)
+    st.text_area("Pergunta:", key="pergunta", height=150)
     st.form_submit_button("Enviar", on_click=enviar_pergunta)
 
 st.markdown("---")
